@@ -4097,11 +4097,11 @@ router
 
                                     for (var k = 0; k < orders_data[j].orders.length; k++) {
 
-                                        for (var l = 0; l < orders_data[j].orders[k].items.length; l++) {
+                                       // for (var l = 0; l < orders_data[j].orders[k].items.length; l++) {
 
                                              order_coll.push(orders_data[j].orders[k]);
 
-                                        }
+                                      //  }
 
                                     }
                                 }
@@ -4123,22 +4123,18 @@ router
                                                        order_final_coll.push(order_coll[s]);
                                                        is_break="true";
                                                        break;
-                                                    }
+                                         
+                                                   }
 
                                             }
 
-                                          
-
                                         }
-
-                                    
-
                                    
                                  }
 
                            //   console.log(total_service_center_order);
                                // res.send(order_final_coll);
-                            res.send(order_final_coll);
+                            res.send(orders_data);
                             
                         }
 
